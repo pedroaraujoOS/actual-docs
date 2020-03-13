@@ -45,3 +45,8 @@ jobs:
       run: |
         ls build/
         sh -c 'if [ `ls build | wc -l` -eq 0 ]; then return 1; fi'
+    - name: Upload math result for job 2
+      uses: actions/upload-artifact@v1
+      with:
+        name: built-docs
+        path: build/
