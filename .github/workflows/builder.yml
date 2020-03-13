@@ -39,7 +39,6 @@ jobs:
         pwd
         ls
         mv actual-docs docs-builder/docs
-      working-directory: $GITHUB_WORKSPACE
     - name: Build docs
       run: python3.8 build.py
       working-directory: docs-builder
