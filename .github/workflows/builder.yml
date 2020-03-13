@@ -43,5 +43,5 @@ jobs:
     - name: Check files were created
       working-directory: docs-builder/
       run: |
-        ls docs/
-        sh -c 'if [ `ls docs | wc -l` -eq 0 ]; then return 1; fi'
+        ls build/
+        sh -c 'if [ `ls build | wc -l` -eq 0 ]; then return 1; fi'
